@@ -1,8 +1,9 @@
 import React from "react";
 
-const Main = () =>{
+const Main = (props) =>{
     return(
-        <div className="main">
+        <main className={props.theme?"dark":"light"}>
+            <div className="main" >
             <div>
                 <h1 className="mainh1">FUN FACTS ABOUT REACT</h1>
             </div>
@@ -18,6 +19,9 @@ const Main = () =>{
                 
             </div>
         </div>
+
+        </main>
+        
         
     );
 };

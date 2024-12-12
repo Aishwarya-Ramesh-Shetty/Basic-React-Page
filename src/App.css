@@ -7,6 +7,29 @@ img{
   width: 100px;
 }
 
+.darker{
+  background-color: #21222A;
+  opacity: 90%;
+  box-shadow: 10px 10px 5px #0d1b2a;
+}
+
+.lighter{
+  background-color: #a4ac86;
+  opacity: 90%;
+  box-shadow: 10px 10px 5px #0d1b2a;
+  color: #0d1b2a;
+}
+
+.dark{
+  background-color: #282D35;
+  color: white;
+
+}
+
+.light{
+  background-color: aliceblue;
+  color: #0d1b2a;
+}
 
 .navbar{
   display: inline-flex;
@@ -27,15 +50,32 @@ header{
   box-shadow: 10px 10px 5px #0d1b2a;
 }
 
-.myname{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color:aqua;
-  font-size: 2rem;
-  padding-left: 1200px;
+
+
+.toggle{
+  /* Green */
+  border: none;
+  background-image: url("https://winaero.com/blog/wp-content/uploads/2021/07/brightness-icon.png");
+  height: 60px;
+  width: 60px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 12px;
+  margin-left: 1200px;
 }
 
+.toggle:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
 /*******************************************************************************************************/
 
 

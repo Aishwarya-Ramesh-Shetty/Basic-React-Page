@@ -9,10 +9,14 @@ import { createRoot } from 'react-dom';
 
 
 const App = () =>{
+    const [theme,setTheme]=React.useState(true)
+    function toggleMode(){
+        setTheme(prevTheme => !prevTheme)
+    }
     return(
         <div>
-            <Header/>
-            <Main/>
+            <Header theme={theme} toggleMode={toggleMode}/>
+            <Main theme={theme}/>
             <Footer/>
             
         </div>
