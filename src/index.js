@@ -17,7 +17,7 @@ const App = () =>{
         <div>
             <Header theme={theme} toggleMode={toggleMode}/>
             <Main theme={theme}/>
-            <Footer/>
+            <Footer theme={theme}/>
             
         </div>
     )

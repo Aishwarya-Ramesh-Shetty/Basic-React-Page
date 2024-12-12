@@ -1,11 +1,14 @@
 import React from "react";
 
-const Footer = () =>{
+const Footer = (props) =>{
     return(
-        <div className="footer">
+        <footer className={props.theme?"dark":"light"}>
+            <div className="footer" >
             <h3> &copy;ReactFacts|All rights reserved</h3>
 
-        </div>
+            </div>
+        </footer>
+        
     );
 };
 
